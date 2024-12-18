@@ -1,4 +1,3 @@
-/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -32,7 +31,6 @@ section {
     background-color: #f1f3f4;
 }
 
-/* Форма */
 input, select, button {
     display: block;
     width: 100%;
@@ -55,7 +53,6 @@ button.btn:hover {
     background-color: #5a6268;
 }
 
-/* Список тренировок */
 ul#workout-list {
     list-style: none;
     padding: 0;
