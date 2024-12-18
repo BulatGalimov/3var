@@ -1,0 +1,85 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.stats, .add-workout, .filters, .workout-list {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f3f4;
+}
+
+/* Форма */
+input, select, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button.btn:hover {
+    background-color: #5a6268;
+}
+
+/* Список тренировок */
+ul#workout-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+button.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+button.delete-btn:hover {
+    background-color: darkred;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Фитнес Трекер</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Мой Фитнес Трекер</h1>
+
+        <!-- Статистика -->
+        <section class="stats">
+            <h2>Статистика</h2>
+            <p>Всего тренировок: <span id="total-count">0</span></p>
+        </section>
+
+        <!-- Добавление тренировки -->
+        <section class="add-workout">
+            <h2>Добавить тренировку</h2>
+            <form id="workout-form">
+                <select id="sport-type" required>
+                    <option value="" disabled selected>Выберите вид спорта</option>
+                    <option value="Бег">Бег</option>
+                    <option value="Велосипед">Велосипед</option>
+                    <option value="Плавание">Плавание</option>
+                </select>
+                <input type="number" id="duration" placeholder="Длительность (мин)" required>
+                <select id="intensity" required>
+                    <option value="" disabled selected>Интенсивность</option>
+                    <option value="Низкая">Низкая</option>
+                    <option value="Средняя">Средняя</option>
+                    <option value="Высокая">Высокая</option>
+                </select>
+                <input type="date" id="date" required>
+                <button type="submit" class="btn">Добавить тренировку</button>
+            </form>
+        </section>
+
+        <!-- Фильтры -->
+        <section class="filters">
+            <h2>Фильтры</h2>
+            <select id="filter-sport">
+                <option value="">Все виды спорта</option>
+                <option value="Бег">Бег</option>
+                <option value="Велосипед">Велосипед</option>
+                <option value="Плавание">Плавание</option>
+            </select>
+            <input type="date" id="filter-date">
+        </section>
+
+        <!-- Список тренировок -->
+        <section class="workout-list">
+            <h2>Мои тренировки</h2>
+            <ul id="workout-list"></ul>
+        </section>
+    </div>
+
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/presenter.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
